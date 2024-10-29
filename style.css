@@ -4,8 +4,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #808000; /* Olive Green */
+    color: #000; /* Black Text */
 }
 
 .container {
@@ -16,8 +16,8 @@ body {
 
 /* Navbar Styles */
 nav {
-    background: #333;
-    color: #fff;
+    background: #000; /* Black */
+    color: #fff; /* White Text */
     padding: 10px 0;
 }
 
@@ -39,7 +39,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #fff; /* White Text */
     text-decoration: none;
 }
 
@@ -61,17 +61,19 @@ nav ul li a:hover {
 .hero-content h2 {
     font-size: 2.5em;
     margin: 0;
+    color: #000; /* Black Text */
 }
 
 .hero-content p {
     font-size: 1.2em;
+    color: #000; /* Black Text */
 }
 
 /* Button Styles */
 .btn {
     display: inline-block;
-    background: #5cb85c;
-    color: white;
+    background: #000; /* Black Button */
+    color: #fff; /* White Text */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -80,19 +82,21 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background: #4cae4c;
+    background: #333; /* Darker Black */
 }
 
 /* About Section */
 #about {
-    background: #fff;
+    background: #000; /* Black Background */
     padding: 50px 0;
+    color: #fff; /* White Text */
 }
 
 /* Projects Section */
 #projects {
-    background: #e9ecef;
+    background: #000; /* Black Background */
     padding: 50px 0;
+    color: #fff; /* White Text */
 }
 
 .projects-list {
@@ -101,8 +105,9 @@ nav ul li a:hover {
 }
 
 .project {
-    background: white;
-    border: 1px solid #ccc;
+    background: #fff; /* White Text inside Black Boxes */
+    color: #000;
+    border: 1px solid #000; /* Black Border */
     border-radius: 5px;
     margin: 10px;
     padding: 20px;
@@ -111,13 +116,14 @@ nav ul li a:hover {
 
 /* Contact Section */
 #contact {
-    background: #fff;
+    background: #000; /* Black Background */
     padding: 50px 0;
+    color: #fff; /* White Text */
 }
 
 /* Footer Styles */
 footer {
-    background: #333;
+    background: #000; /* Black Background */
     color: white;
     text-align: center;
     padding: 10px 0;
