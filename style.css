@@ -16,30 +16,31 @@ body {
 
 /* Navbar Styles */
 nav {
-    background: #000; /* Black */
-    color: #fff; /* White Text */
+    background: #000;
+    color: #fff;
     padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav .logo {
-    float: left;
     margin-left: 20px;
 }
 
 nav ul {
+    display: flex;
     list-style: none;
-    padding: 0;
     margin: 0;
-    float: right;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline;
     margin-right: 20px;
 }
 
 nav ul li a {
-    color: #fff; /* White Text */
+    color: #fff;
     text-decoration: none;
 }
 
@@ -49,7 +50,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 #home {
-    background: url('/Users/rohan/Downloads/DryLab_Rohan Munoth.jpg') no-repeat center center/cover;
+    background: url('images/Rohan_Munoth_headshot.jpg') no-repeat center center/cover;
     height: 100vh;
     color: white;
     display: flex;
@@ -61,42 +62,43 @@ nav ul li a:hover {
 .hero-content h2 {
     font-size: 2.5em;
     margin: 0;
-    color: #000; /* Black Text */
+    color: #fff; /* White Text */
 }
 
 .hero-content p {
     font-size: 1.2em;
-    color: #000; /* Black Text */
+    color: #fff; /* White Text */
 }
 
 /* Button Styles */
 .btn {
     display: inline-block;
-    background: #000; /* Black Button */
-    color: #fff; /* White Text */
+    background: #000;
+    color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     text-decoration: none;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
-    background: #333; /* Darker Black */
+    background: #333;
+    transform: scale(1.05);
 }
 
 /* About Section */
 #about {
-    background: #000; /* Black Background */
+    background: #000;
     padding: 50px 0;
-    color: #fff; /* White Text */
+    color: #fff;
 }
 
 /* Projects Section */
 #projects {
-    background: #000; /* Black Background */
+    background: #000;
     padding: 50px 0;
-    color: #fff; /* White Text */
+    color: #fff;
 }
 
 .projects-list {
@@ -105,25 +107,25 @@ nav ul li a:hover {
 }
 
 .project {
-    background: #fff; /* White Text inside Black Boxes */
+    background: #fff;
     color: #000;
-    border: 1px solid #000; /* Black Border */
+    border: 1px solid #000;
     border-radius: 5px;
     margin: 10px;
     padding: 20px;
-    flex: 1 1 300px; /* Responsive */
+    flex: 1 1 300px;
 }
 
 /* Contact Section */
 #contact {
-    background: #000; /* Black Background */
+    background: #000;
     padding: 50px 0;
-    color: #fff; /* White Text */
+    color: #fff;
 }
 
 /* Footer Styles */
 footer {
-    background: #000; /* Black Background */
+    background: #000;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -135,13 +137,13 @@ footer {
 /* Responsive Styles */
 @media (max-width: 768px) {
     nav ul {
-        float: none;
+        flex-direction: column;
         text-align: center;
     }
 
     nav ul li {
-        display: block;
         margin-right: 0;
+        display: block;
     }
 
     .projects-list {
@@ -150,5 +152,13 @@ footer {
 
     .project {
         width: 100%;
+    }
+
+    .hero-content h2 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
     }
 }
